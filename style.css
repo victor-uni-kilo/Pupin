@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'Suez One';
+  src: url('./fonts/Suez_One/SuezOne-Regular.ttf')
+}
+@font-face {
+  font-family: 'Source Sans';
+  src: url('./fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf')
+}
+html{
+  color: #0A080D;
+  font-family: 'Source Sans', sans-serif;
+}
+#page {
+  margin: 0 auto;
+  width: 90%;
+  height: min-content;
+  min-height: 100vh;
+}
+aside{
+  padding: 2rem 0;
+}
+aside{
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  text-align: right;
+  vertical-align: middle;
+}
+#logo{
+  height: 3rem;
+}
+#path878{
+  fill:lime;
+}
+hr{
+  margin: 1rem 0;
+  color: #0A080D;
+}
+ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+li{
+  display: inline;
+  float: right;
+  clear: right;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  background-color: #0A080D;
+}
+li:hover{
+  background-color: #E84A5F;
+  transition: 300ms;
+}
+ul a{
+  font-size: 0.8rem;
+  color: white;
+  text-decoration: none;
+  font-family: 'Suez One', serif;
+}
+/* SADRZINA STRANE */
+#content{
+  position: relative;
+  left: 20%;
+  width: 60%;
+  padding-top: 2rem;
+}
+h1, h2 {
+  font-family: 'Suez One', serif;
+}
+p{
+  margin: 1rem 0;
+  text-align: justify;
+}
+/* drop caps efekat*/
+section > p:first-of-type:first-letter {
+  float: left;
+  margin: 0.2rem 0.2rem 0 0;
+  font-size: 3rem;
+  font-family: 'Suez One', serif;
+  font-weight: bold;
+  color: #E84A5F;
+}
+/* obuhvatiti float-ovanu sliku */
+section > p:last-of-type:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+section img{
+  max-width: 60%;
+}
+/* img wrapp */
+.img-right{
+  float: right;
+  margin-left: 1rem;
+}
+.img-left{
+  float: left;
+  margin-right: 1rem;
+}
+/* Home Page */
+.summary{
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-top: 1px solid #E84A5F;
+  border-bottom: 1px solid #E84A5F;
+}
+/* Early Life and Education */
+section h2{
+  margin: 2rem 0;
+}
+.quote{
+  position: relative;
+  left: 3rem;
+}
+/* Literary Works */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+th, td {
+  padding: 0.5rem;
+  border-bottom: solid 1px #0A080D;
+  font-size: 0.9rem;
+  text-align: left;
+}
+th {
+  border-bottom: solid 2px #E84A5F;
+}
+tr:last-child td{
+  border-bottom: solid 2px #E84A5F;
+}
+/* cell fix */
+td.place {
+  white-space: nowrap;
+}
